@@ -144,7 +144,9 @@
                         https://raw.githubusercontent.com/skodjob/deployment-hub/main/open-data-hub/client/odh-manifests-model-mesh-crd.yaml,
                         https://raw.githubusercontent.com/skodjob/deployment-hub/main/open-data-hub/client/odh-manifests-model-mesh-overlays-odh-crd.yaml,
                         https://raw.githubusercontent.com/skodjob/deployment-hub/main/open-data-hub/client/odh-manifests-model-registry-operator-crd.yaml,
+                        <!-- WORKAROUND for https://github.com/fabric8io/kubernetes-client/pull/5853 -->
                         <!-- https://raw.githubusercontent.com/skodjob/deployment-hub/main/open-data-hub/client/odh-manifests-odh-model-controller-crd.yaml, -->
+                        file://${project.basedir}/odh-manifests-odh-model-controller-crd.yaml,
                         https://raw.githubusercontent.com/skodjob/deployment-hub/main/open-data-hub/client/odh-manifests-odh-notebook-controller-kf-notebook-controller-crd.yaml,
                         https://raw.githubusercontent.com/skodjob/deployment-hub/main/open-data-hub/client/odh-manifests-ray-crd.yaml,
                         https://raw.githubusercontent.com/skodjob/deployment-hub/main/open-data-hub/client/odh-manifests-trustyai-service-operator-crd.yaml
